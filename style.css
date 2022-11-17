@@ -1,0 +1,245 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.main{
+	background-color: cyan;
+	width: 100%;
+	height: 635px;
+}
+/*nav bar start*/
+ul, ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.menu{
+	text-align: center;
+	background-color: #F44336;
+}
+.menu ul{
+	display: flex;
+}
+.menu ul li{
+	height: 50px;
+	width: 140px;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+}
+.menu ul li:hover:not(.active){
+	background-color: black;
+}
+.active{
+	background-color: black;
+}
+.menu ul li a:focus{
+	background-color: black;
+}
+.menu ul li a{
+	color: white;
+	font-size: 20px;
+	display: block;
+}
+.dropdown{
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+.dropdown ul li{
+	border-bottom: 2px solid white;
+}
+.menu ul li:hover .dropdown{
+	display: block;
+}
+.menu ul li:hover .dropdown ul{
+	display: block;
+	background-color: #F44336;
+}
+.sub{
+	position: relative;
+}
+.dropdown2{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 140px;
+}
+.sub:hover .dropdown2{
+	display: block;
+}
+/*nav bar end*/
+
+/*flags start*/
+.flags{
+	display: flex;
+	margin-top: 5px;
+	position: relative;
+}
+/*us-flag start*/
+.us-flag{
+	height: 250px;
+	width: 26%;
+	position: relative;
+}
+.us-flag .red{
+	background-color: #B22234;
+	height: 19.2px;
+	width: 100%;
+}
+.us-flag .white{
+	background-color: white;
+	height: 19.2px;
+	width: 100%;
+}
+.us-flag img{
+	height: 135px;
+	width: 150px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*us-flag end*/
+
+/*india-flag start*/
+.india-flag{
+	height: 250px;
+	width: 26%;
+	margin-left: 5px;
+	position: relative;
+}
+.india-flag .orange{
+	background-color: #FF9933;
+	height: 83px;
+	width: 100%;
+}
+.india-flag .white{
+	background-color: white;
+	height: 83px;
+	width: 100%;
+}
+.india-flag .green{
+	background-color: #128807;
+	height: 83px;
+	width: 100%;
+}
+.india-flag img{
+	height: 80px;
+	width: 80px;
+	position: absolute;
+	top: 85px;
+	left: 125px;
+}
+/*india-flag end*/
+
+/*canada-flag start*/
+.canada-flag{
+	height: 250px;
+	width: 26%;
+	margin-left: 5px;
+	display: flex;
+	position: relative;
+}
+.canada-flag .red{
+	background-color: #FF0000;
+	height: 250px;
+	width: 24.5%;
+}
+.canada-flag .white{
+	background-color: white;
+	height: 250px;
+	width: 50%;
+}
+.canada-flag img{
+	height: 120px;
+	width: 120px;
+	position: absolute;
+	top: 60px;
+	left: 110px;
+}
+/*canada-flag end*/
+
+/*argentina-flag start*/
+.argentina-flag{
+	height: 500px;
+	width: 22%;
+	margin-left: 5px;
+	display: flex;
+	position: relative;
+}
+.argentina-flag .blue{
+	background-color: #74ACDF;
+	height: 500px;
+	width: 100%;
+}
+.argentina-flag .white{
+	background-color: white;
+	height: 500px;
+	width: 100%;
+}
+.argentina-flag img{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 200px;
+	left: 97px;
+}
+/*argentina-flag end*/
+
+/*bd-flag start*/
+.bd-flag{
+	height: 245px;
+	width: 77.7%;
+	margin-right: 5px;
+	margin-top: 5px;
+	position: absolute;
+	top: 250px;
+	left: 0;
+}
+.bd-flag .green{
+	height: 245px;
+	width: 100%px;
+	background-color: green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.bd-flag .red{
+	background-color: red;
+	height: 150px;
+	width: 150px;
+	border-radius: 80px;
+	position: relative;
+}
+.bd-flag img{
+	height: 90px;
+	width: 90px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+/*bd-flag end*/
+/*flags end*/
+
+/*footer start*/
+.footer{
+	height: 75px;
+	width: 100%;
+	background-color: #3F3F3F;
+	margin-top: 5px;
+}
+.footer p{
+	color: white;
+	text-align: center;
+	line-height: 75px;
+}
+.footer p a{
+	font-weight: bold;
+	color: blue;
+	background-color: white;
+}
+/*footer end*/
